@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.LoginController"
+            prefWidth="420" prefHeight="480"
+            style="-fx-background-color: #FFFFFF;">
+
+    <VBox alignment="CENTER" spacing="20"
+          AnchorPane.topAnchor="60"
+          AnchorPane.bottomAnchor="60"
+          AnchorPane.leftAnchor="50"
+          AnchorPane.rightAnchor="50">
+
+        <Label text="Business Manager"
+               style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #1E88E5;" />
+
+        <Label text="Team: Myriam · Jeffrey · Jad · Mark"
+               style="-fx-text-fill: #E53935; -fx-font-size: 13px;" />
+
+        <TextField fx:id="usernameField" promptText="Username"
+                   style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1E88E5; -fx-padding: 8;" />
+
+        <PasswordField fx:id="passwordField" promptText="Password"
+                       style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1E88E5; -fx-padding: 8;" />
+
+        <Button fx:id="loginButton" text="Login" onAction="#handleLogin"
+                style="-fx-background-color: #1E88E5; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-pref-width: 120; -fx-pref-height: 35;" />
+
+        <Label fx:id="messageLabel" text=""
+               style="-fx-text-fill: #E53935; -fx-font-size: 12px;" />
+
+    </VBox>
+</AnchorPane>
